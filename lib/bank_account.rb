@@ -14,6 +14,9 @@ class BankAccount
     @balance -= money
   end
 
+  def statement
+    print "date || credit || debit || balance"
 
+  end
 
 end
