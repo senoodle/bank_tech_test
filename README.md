@@ -3,19 +3,30 @@ Week 10 Bank Tech Test
 ###User Stories
 
 ```
-As a client, I would like to be deposit money into my account.
+As a client,
+I would like to be able to deposit money into my bank account.
 ```
 
 ```
-As a client, I would like to withdraw money from my account.
+As a client,
+I would like to be able to withdraw money from my bank account.
 ```
 
 ```
-As a client, I want to view my balance.
+As a client,
+so that I know how much money I have,
+I want to view my account balance.
 ```
 
 ```
-As a client, I want to view my transaction history in reverse chronological order so that it shows me the most relevant information first.
+As a client,
+I would like to see the transaction dates.
+```
+
+```
+As a client,
+so that I can see the most relevant information first,
+I want to view my transaction history in reverse chronological order.
 ```
 
 ### Example:
