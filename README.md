@@ -1,11 +1,24 @@
-### Requirements
+Week 10 Bank Tech Test
 
-* You should be able to interact with your code via a REPL like IRB or the JavaScript console.  (You don't need to implement a command line interface that takes input from STDIN.)
-* Deposits, withdrawal.
-* Account statement (date, amount, balance) printing.
-* Data can be kept in memory (it doesn't need to be stored to a database or anything).
+###User Stories
 
-### Acceptance criteria
+```
+As a client, I would like to be deposit money into my account.
+```
+
+```
+As a client, I would like to withdraw money from my account.
+```
+
+```
+As a client, I want to view my balance.
+```
+
+```
+As a client, I want to view my transaction history in reverse chronological order so that it shows me the most relevant information first.
+```
+
+### Example:
 
 **Given** a client makes a deposit of 1000 on 10-01-2012  
 **And** a deposit of 2000 on 13-01-2012  
