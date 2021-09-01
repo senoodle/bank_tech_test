@@ -1,6 +1,7 @@
 Week 10 Bank Tech Test
 
-###User Stories
+
+User Stories
 
 ```
 As a client,
@@ -28,6 +29,7 @@ As a client,
 so that I can see the most relevant information first,
 I want to view my transaction history in reverse chronological order.
 ```
+<img width="842" alt="Screenshot 2021-09-02 at 00 21 13" src="https://user-images.githubusercontent.com/81044352/131757974-5af1f036-46a6-4ed2-8f6e-d7fb0c59947c.png">
 
 ### Example:
 
