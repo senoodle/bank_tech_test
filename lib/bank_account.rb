@@ -1,12 +1,13 @@
 require 'transaction'
+require 'statement'
 
 class BankAccount
 
-  attr_reader :balance, :transaction
+  attr_reader :balance, :transaction_class
 
-  def initialize(transaction = Transaction, statement = Statement)
+  def initialize(transaction_class = Transaction, statement = Statement.new)
     @balance = 0
-    @transaction = transaction
+    @transaction_class = transaction_class
     @statement = statement
     @transactions = []
 
@@ -23,10 +24,11 @@ class BankAccount
   end
 
   def print_statement
-      @statement.print
-    end
+    @statement.print
+  end
+
 private
   def create_transaction
-    @transaction.new
+    @transaction_class.new
   end
 end
