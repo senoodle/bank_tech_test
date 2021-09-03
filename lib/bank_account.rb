@@ -1,22 +1,28 @@
+require_relative 'transaction'
+
 class BankAccount
 
-  attr_reader :balance
+  attr_reader :balance, :transaction
 
-  def initialize
+  def initialize(transaction = Transaction)
     @balance = 0
+    @transaction = transaction
+    @transactions = []
+
   end
 
   def deposit(money)
-    @balance += money
+     create_transaction
+     @balance += money
   end
 
   def withdraw(money)
+    create_transaction
     @balance -= money
   end
 
-  def statement
-    print "date || credit || debit || balance"
-
+private
+  def create_transaction
+    @transaction.new
   end
-
 end
