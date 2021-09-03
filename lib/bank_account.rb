@@ -1,12 +1,13 @@
-require_relative 'transaction'
+require 'transaction'
 
 class BankAccount
 
   attr_reader :balance, :transaction
 
-  def initialize(transaction = Transaction)
+  def initialize(transaction = Transaction, statement = Statement)
     @balance = 0
     @transaction = transaction
+    @statement = statement
     @transactions = []
 
   end
@@ -21,6 +22,9 @@ class BankAccount
     @balance -= money
   end
 
+  def print_statement
+      @statement.print
+    end
 private
   def create_transaction
     @transaction.new

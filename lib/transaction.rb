@@ -1,5 +1,4 @@
-require_relative 'bank_account'
-
+require 'bank_account'
 
 class Transaction
 
